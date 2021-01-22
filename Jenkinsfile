@@ -12,6 +12,12 @@ pipeline {
             }
         }
 
+        stage('test') {
+            steps {
+                sh 'npm run test'
+            }
+        }
+
         stage('Deploy') {
             steps {
                 sh 'npm run start:dev'
