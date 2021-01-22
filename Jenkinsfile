@@ -11,7 +11,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                input message: 'Iniciando instalacion'
                 sh 'npm install'
             }
         }
