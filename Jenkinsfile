@@ -1,0 +1,19 @@
+pipeline {
+    agent {
+        docker {
+            image 'node:latest'
+            args '-p 3000:3000'
+        }
+    }
+    environment {
+        CI = 'true'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                input message: 'Iniciando instalacion'
+                sh 'npm install'
+            }
+        }
+    }
+}
