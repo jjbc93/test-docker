@@ -15,10 +15,6 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
-    });
-
     it('should return "Agente de jenkin funcionando!"', () => {
       expect(appController.getHello()).toBe('Agente de jenkin funcionando!');
     });
