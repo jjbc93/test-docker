@@ -15,8 +15,8 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Agente de jenkin funcionando!"', () => {
-      expect(appController.getHello()).toBe('Agente de jenkin funcionando!');
+    it('should return "Agente de Jenkin funcionando!"', () => {
+      expect(appController.getHello()).toBe('Agente de Jenkin funcionando!');
     });
   });
 });
