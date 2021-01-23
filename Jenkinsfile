@@ -4,11 +4,12 @@ pipeline {
             image 'node'
             args '-p 3000:3000'
         }
-    }
+    }                       
     stages {
         stage('Build') {
             steps {
                 sh 'npm install'
+                sh 'npm run build'
             }
         }
 
@@ -20,7 +21,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'npm run start:dev'
+                sh '(npm run start)'
             }
         }
     }
