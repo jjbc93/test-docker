@@ -21,7 +21,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh '(npm run start)'
+                sh '(npm run start&)'
             }
         }
     }
